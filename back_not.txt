@@ -1,0 +1,13 @@
+.jpg
+.gif
+.png
+.jpeg
+.raw
+.mp4
+.wav
+.inf
+.bak
+.old
+.iso
+.zip
+.7z

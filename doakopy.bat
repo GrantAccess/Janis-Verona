@@ -35,9 +35,11 @@ GOTO ASSM
 :END
 
 :: Make a report of the tree of files
+:: if you need to find a file, this document will tell which archive to look in. As a kind of index.
 CD %ARCHIVE%
 CD .. 
 tree /a /f > session_backed.txt
+:: merge an old index into an updated index
 COPY session_backed.txt + backed_files.txt backed.txt
 del backed_files.txt
 ren backed.txt backed_files.txt

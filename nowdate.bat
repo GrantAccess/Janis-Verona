@@ -1,4 +1,6 @@
 echo off
+:: This subroutine gets the system date and time to use as a unique filename
+
 set CUR_YYYY=%date:~6,4%
 set CUR_MM=%date:~3,2%
 set CUR_DD=%date:~0,2%

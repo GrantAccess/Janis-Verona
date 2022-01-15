@@ -23,5 +23,4 @@
 
 :: SUBFILENAME=2022-01-12-21-54
 :: USERNAME=mitch
-
 7z a -t7z -mx=1 -sdel -v4480m -plock -r %SUBFILENAME%-%USERNAME%.7z %ARCHIVE%\*.*

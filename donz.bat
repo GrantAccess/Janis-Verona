@@ -1,8 +1,10 @@
-echo off
+@echo off
+:: Subroutine of
+
 :: What to backup
-rem USERPROFILE=C:\Users\mitch
-rem USERNAME=mitch
-rem PUBLIC=C:\Users\Public
+:: USERPROFILE=C:\Users\mitch
+:: USERNAME=mitch
+:: PUBLIC=C:\Users\Public
 
 :: %ARCHIVE% contains the 'dated path'
 :: create an password protected archive file of the archive directory

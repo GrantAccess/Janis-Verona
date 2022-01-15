@@ -1,7 +1,7 @@
 @echo off
 :: Subroutine of gobackup.bat
 :: For archiving a directory using 7zip
-:: by <https://github.com/GrantAccess/Janis-Verona/> @CC@
+:: by <https://github.com/GrantAccess/Janis-Verona/> (CC)
 
 :: What to backup
 :: USERPROFILE=C:\Users\mitch

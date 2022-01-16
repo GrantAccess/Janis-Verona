@@ -2,6 +2,7 @@
 :: Subroutine of gobackup.bat
 :: For archiving a directory using 7zip
 :: by <https://github.com/GrantAccess/Janis-Verona/> (CC)
+:: the author has not changed this document since Sunday 16 Jan 2022
 
 :: What to backup
 :: USERPROFILE=C:\Users\mitch

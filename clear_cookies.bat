@@ -1,8 +1,10 @@
-::So far this appers to be working. Do no edit it.
-
 @echo off
-title Clear all cookies   .:Developed by ComputerCrash0:.
-pause
+:: Subroutine of wack.bat
+:: This subroutine Clears all cookies
+:: First Developed by ComputerCrash0:.
+:: by <https://github.com/GrantAccess/Janis-Verona/> (CC)
+:: the author has not changed this document since Sunday 16 Jan 2022
+
 :flash cookies
 set FlashCookies=C:\Users\%USERNAME%\AppData\Roaming\Macromedia\Flashp~1
 

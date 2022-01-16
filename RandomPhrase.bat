@@ -1,4 +1,8 @@
 @echo off
+:: Subroutine of gobackup.bat
+:: For Making a random password of a various length
+:: by <https://github.com/GrantAccess/Janis-Verona/> (CC)
+:: the author has not changed this document since Sunday 16 Jan 2022
 
 :: length of the word 9-20
 :: if a password is compromised, attacker will assume all words are same length 

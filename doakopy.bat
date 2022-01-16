@@ -1,4 +1,9 @@
-echo off
+@echo off
+:: Subroutine of gobackup.bat
+:: For xcopying modified files from their working folder to the backup directory
+:: by <https://github.com/GrantAccess/Janis-Verona/> (CC)
+:: the author has not changed this document since Sunday 16 Jan 2022
+
 :: Copy my files that have the archive bit set to the dir %ARCHIVE% using xcopy
 :: USERPROFILE=C:\Users\burt
 
@@ -11,6 +16,7 @@ echo off
 ::                all files underneath the directory obj or all files with the
 ::                .obj extension respectively.
 
+:: Deciding What to Back Up <https://flylib.com/books/en/4.339.1.15/1/>
 :: File sources
 :: make strings naming the file sources
 

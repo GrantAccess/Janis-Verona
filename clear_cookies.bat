@@ -1,7 +1,7 @@
 @echo off
 :: Subroutine of wack.bat
 :: This subroutine Clears all cookies
-:: First Developed by ComputerCrash0:.
+:: First Developed by <https://github.com/CCrashZer0/ClearCookies> (CC)
 :: by <https://github.com/GrantAccess/Janis-Verona/> (CC)
 :: the author has not changed this document since Sunday 16 Jan 2022
 

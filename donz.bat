@@ -11,7 +11,7 @@
 
 :: %ARCHIVE% contains the 'dated path'
 :: create an password protected archive file of the archive directory
-:: the archive file is sized into blocks that could fill a DVD 
+:: the archive file is sized into blocks that could fill a DVD
 
 :: Usage: 7z <command> [<switches>...] <archive_name> [<file_names>...] [@listfile]
 :: a : Add files to archive
@@ -24,4 +24,17 @@
 
 :: SUBFILENAME=2022-01-12-21-54
 :: USERNAME=mitch
-7z a -t7z -mx=1 -sdel -v4480m -plock -r %SUBFILENAME%-%USERNAME%.7z %ARCHIVE%\*.*
+
+:: use a password
+SET LUCK=lock
+
+7z a -t7z -mx=1 -sdel -v4480m -p%LUCK% -r %SUBFILENAME%-%USERNAME%.7z %ARCHIVE%\*.*
+
+:: remember the Password
+echo  *** The archive %SUBFILENAME%-%USERNAME%.7z will need %LUCK% password ***  > remember.txt
+
+:: merge an old index into an updated index
+COPY remember.txt + backed_files.txt backed.txt
+del backed_files.txt
+ren backed.txt backed_files.txt
+del remember.txt

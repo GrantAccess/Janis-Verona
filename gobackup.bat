@@ -4,11 +4,12 @@ echo off
 :: ProgramFiles=C:\Program Files
 :: %ProgramFiles% variable can be used instead
 
+:: put new paths at the start of path, there may be no ; at the end!
 :: add working dir to path
-set PATH=%PATH%%ProgramFiles%\7-Zip\;
+set PATH=%ProgramFiles%\7-Zip\;%PATH%
 
 :: add this dir to path
-set PATH=%PATH%%cd%;
+set PATH=%cd%;%PATH%
 
 call nowdate.bat
 call doakopy.bat

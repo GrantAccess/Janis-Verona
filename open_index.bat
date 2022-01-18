@@ -14,7 +14,14 @@ CD ..
 if exist backed_files.txt ren backed_files.txt backed_files.old
 
 :: The master password which you must remember and protect
-set conan=wintermute
+set conan=GrantMeAccess
 
 :: this makes an archive
 :: 7z a -t7z -mx=1 -sdel -v4480m -p%LUCK% -r %SUBFILENAME%-%USERNAME%.7z %ARCHIVE%\*.*
+
+7z e -pGrantMeAccess backed_files.7z.001
+set ohfrack=%errorlevel%
+if %ohfrack% gtr 0 goto arret
+
+:: after success extraction
+:arret

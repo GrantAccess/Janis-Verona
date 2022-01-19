@@ -17,6 +17,9 @@
 
 if exist backed_files.txt ren backed_files.txt backed_files.old
 
+:testhere
+if not exist backed_files.7z.001 goto noindex
+
 :: The master password which you must remember and protect
 :: is held by 'conan the librarian'
 set conan=-pGrantMeAccess
@@ -26,13 +29,11 @@ set conan=-pGrantMeAccess
 :: so use "set conan=password" you will be asked to enter password
 if %conan% equ password set conan=
 
-:: this makes an archive
-:: 7z a -t7z -mx=1 -sdel -v4480m -p%LUCK% -r %SUBFILENAME%-%USERNAME%.7z %ARCHIVE%\*.*
-
 7z e %conan% backed_files.7z.001
 set ohfrack=%errorlevel%
 if %ohfrack% gtr 0 goto arret
 
+:havefile
 :: after success extraction
 del backed_files.7z.001
 if not exist backed_files.old goto fine
@@ -43,6 +44,12 @@ ren newindex.txt backed_files.txt
 
 goto fine
 
+:noindex
+echo You need to place your backed_files.7z.001 file in this folder.
+pause
+if exist backed_files.txt goto havefile
+goto testhere
+
 :arret
 echo Something has gone amiss
 echo set
@@ -50,3 +57,4 @@ echo press Ctrl+C to abandon this program
 pause
 
 :fine
+echo The index file is here

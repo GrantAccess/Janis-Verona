@@ -29,6 +29,16 @@ set conan=-pGrantMeAccess
 :: so use "set conan=password" you will be asked to enter password
 if %conan% equ password set conan=
 
+:: To keep your Master password safe
+:: Printout a cheque <http://www.clipartsuggest.com/images/817/click-here-to-download-the-blank-check-png-L0NMov-clipart.png>
+:: Make it payable to 'conan the librarian'
+:: The ammount being 'everything'
+:: Write you password in pencil on the back
+:: Keep the cheque in your wallet.
+:: or
+:: Have an in-depth look at the Zzip.lnk file. Such files are not normally opened as a text.
+:: Always give potential attackers, the opportunity to make wrong choices.
+
 7z e %conan% backed_files.7z.001
 set ohfrack=%errorlevel%
 if %ohfrack% gtr 0 goto arret

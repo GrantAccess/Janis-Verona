@@ -19,18 +19,34 @@ if exist backed_files.txt ren backed_files.txt backed_files.old
 
 :: The master password which you must remember and protect
 :: is held by 'conan the librarian'
-set conan=GrantMeAccess
+set conan=-pGrantMeAccess
+:: set conan=password
+
+:: if you share your computer with others, then others might read this file
+:: so use "set conan=password" you will be asked to enter password
+if %conan% equ password set conan=
 
 :: this makes an archive
 :: 7z a -t7z -mx=1 -sdel -v4480m -p%LUCK% -r %SUBFILENAME%-%USERNAME%.7z %ARCHIVE%\*.*
 
-7z e -p%conan% backed_files.7z.000
+7z e %conan% backed_files.7z.001
 set ohfrack=%errorlevel%
 if %ohfrack% gtr 0 goto arret
 
 :: after success extraction
+del backed_files.7z.001
+if not exist backed_files.old goto fine
+copy backed_files.txt + backed_files.old newindex.txt
+del backed_files.old
+del backed_files.txt
+ren newindex.txt backed_files.txt
+
+goto fine
 
 :arret
-echo Something has gone awray
+echo Something has gone amiss
+echo set
+echo press Ctrl+C to abandon this program
+pause
 
 :fine

@@ -1,3 +1,9 @@
+Folder PATH listing for volume Windows 10
+Volume serial number is 00000049 C475:5265
+C:\USERS\MITCH\ARCHIVE\BACKUP\2022-01-20-12-45-MITCH
+Invalid path - \USERS\MITCH\ARCHIVE\BACKUP\2022-01-20-12-45-MITCH
+No subfolders exist 
+
 
  *** archive 2022-01-15-mitch password is burnIsh4evn1ng ***
 

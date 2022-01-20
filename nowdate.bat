@@ -2,7 +2,7 @@
 :: Subroutine of gobackup.bat
 :: This subroutine gets the system date and time to use as a unique filename for archives
 :: by <https://github.com/GrantAccess/Janis-Verona/> (CC)
-:: the author has not changed this document since Sunday 16 Jan 2022
+:: the author has not changed this document since Thursday 20 Jan 2022
 
 set CUR_YYYY=%date:~6,4%
 set CUR_MM=%date:~3,2%
@@ -17,5 +17,8 @@ set CUR_MS=%time:~9,2%
 set SUBFILENAME=%CUR_YYYY%-%CUR_MM%-%CUR_DD%-%CUR_HH%-%CUR_NN%
 :: do not make backups to your normal work folder, or you will be making backups of backups!
 :: this is where the backups are kept.
-mkdir %USERPROFILE%\archive\backup\%SUBFILENAME%-%USERNAME%
-set ARCHIVE=%USERPROFILE%\archive\backup\%SUBFILENAME%-%USERNAME%
+
+:: where are the backups put
+set ASIS=%USERPROFILE%\archive\backup\
+mkdir %ASIS%%SUBFILENAME%-%USERNAME%
+set ARCHIVE=%ASIS%%SUBFILENAME%-%USERNAME%

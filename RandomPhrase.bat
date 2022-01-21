@@ -5,12 +5,12 @@
 :: the author has not changed this document since Sunday 16 Jan 2022
 
 :: length of the word 9-20
-:: if a password is compromised, attacker will assume all words are same length 
+:: if a password is compromised, attacker will assume all words are same length
 SET /A LENNY=0
 SET /A LENMIN=9
 SET /A LENMAX=20
 SET /A LENDIF=%LENMAX%-%LENMIN%
-:: pick a number, in the differance range, plus the smallest number 
+:: pick a number, in the differance range, plus the smallest number
 SET /A LENNY=%RANDOM%%%%LENDIF%+%LENMIN%
 :: echo %LENDIF%
 :: echo %LENNY%
@@ -110,7 +110,4 @@ if %tally% LSS %LENNY% GOTO :pickle
 echo %LENNY%
 echo %love%
 
-
-
-
-pause
+:: pause

@@ -26,7 +26,8 @@
 :: USERNAME=mitch
 
 :: use a password
-SET LUCK=lock
+call RandomPhrase.bat
+:: SET LUCK=lock
 
 :: remember the Password
 echo  *** The archive %SUBFILENAME%-%USERNAME%.7z will need %LUCK% password ***  > remember.txt

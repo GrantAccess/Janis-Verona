@@ -2,7 +2,7 @@
 :: Subroutine of gobackup.bat
 :: For archiving a directory using 7zip
 :: by <https://github.com/GrantAccess/Janis-Verona/> (CC)
-:: the author has not changed this document since Thursday 20 Jan 2022
+:: the author has not changed this document since Friday 21 Jan 2022
 
 :: What to backup
 :: USERPROFILE=C:\Users\mitch
@@ -28,8 +28,6 @@
 :: use a password
 SET LUCK=lock
 
-7z a -t7z -mx=1 -sdel -v4480m -p%LUCK% -r %ASIS%%SUBFILENAME%-%USERNAME%.7z %ARCHIVE%\*.*
-
 :: remember the Password
 echo  *** The archive %SUBFILENAME%-%USERNAME%.7z will need %LUCK% password ***  > remember.txt
 
@@ -40,3 +38,10 @@ ren backed.txt backed_files.txt
 del remember.txt
 
 :: archive the index-file 'backed-files.txt'
+7z a -t7z -mx=1 -sdel -v4480m %conan% -r backed_files.7z backed_files.txt
+
+:: include the index in the archive-file
+copy backed_files.* %ARCHIVE%
+
+:: Make the Archive-file
+7z a -t7z -mx=1 -sdel -v4480m -p%LUCK% -r %ASIS%%SUBFILENAME%-%USERNAME%.7z %ARCHIVE%\*.*

@@ -21,7 +21,7 @@ if exist backed_files.txt ren backed_files.txt backed_files.old
 if not exist backed_files.7z.001 goto noindex
 
 :: The master password which you must remember and protect
-:: is held by 'conan the librarian'
+:: is held by 'conan the librarian' plus the -p switch
 set conan=-p123ABC
 :: set conan=password
 

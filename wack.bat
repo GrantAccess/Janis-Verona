@@ -19,13 +19,23 @@ GOTO END
 ECHO Shall I realy delete %ARCHIVE% ?
 ECHO If not press Ctrl+C keys
 PAUSE
-RMDIR /S %ARCHIVE%
+RMDIR /S /Q %ARCHIVE%
 GOTO DONE
 
 :: Clear the browser history
+
+
 
 :: empty the recycle bin
 :MTBIN
 :: rd /s /q C:\$Recycle.Bin
 
 :END
+
+explorer %ASIS%
+
+:winclean
+:: do disk cleanup
+ECHO Shall we do a 'Disk Cleanup' ?
+pause
+%windir%\system32\cleanmgr.exe

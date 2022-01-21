@@ -25,3 +25,5 @@ Easy to set-up just edit these lines in doakopy.bat
 .The safty of 7zip <https://7ziphelp.com/is-7-zip-safe-find-out-the-truth>
 
 .How good is AES encryption <https://www.techradar.com/uk/news/what-is-aes>
+
+.Other good ways to backup Win10 <https://www.youtube.com/watch?v=y76NTZ6lvnA>

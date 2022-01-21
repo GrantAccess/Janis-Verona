@@ -12,6 +12,7 @@ set PATH=%ProgramFiles%\7-Zip\;%PATH%
 set PATH=%cd%;%PATH%
 
 call nowdate.bat
+call open_index.bat
 call doakopy.bat
 call donz.bat
 call wack.bat

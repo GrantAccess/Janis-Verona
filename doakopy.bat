@@ -2,7 +2,7 @@
 :: Subroutine of gobackup.bat
 :: For xcopying modified files from their working folder to the backup directory
 :: by <https://github.com/GrantAccess/Janis-Verona/> (CC)
-:: the author has not changed this document since Sunday 16 Jan 2022
+:: the author has not changed this document since Thursday 20 Jan 2022
 
 :: Copy my files that have the archive bit set to the dir %ARCHIVE% using xcopy
 :: USERPROFILE=C:\Users\burt
@@ -42,9 +42,8 @@ GOTO ASSM
 
 :: Make a report of the tree of files
 :: if you need to find a file, this document will tell which archive to look in. As a kind of index.
-CD %ARCHIVE%
-CD .. 
-tree /a /f > session_backed.txt
+
+tree %ARCHIVE% /a /f > session_backed.txt
 :: merge an old index into an updated index
 COPY session_backed.txt + backed_files.txt backed.txt
 del backed_files.txt

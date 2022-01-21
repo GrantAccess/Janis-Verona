@@ -20,12 +20,15 @@
 :: File sources
 :: make strings naming the file sources
 
+:: Just edit the lines below to say which folders to backup
 set ALPHA=%USERPROFILE%\Documents\keep
 set BETA=C:\Users\Public\Music\*.*
 set PDFETA=C:\Users\Public\Documents\*.*
 
 :: count for the number of file sources
 set PLCNO=3
+
+:: Thats the setup Finished!
 
 :ASSM
 

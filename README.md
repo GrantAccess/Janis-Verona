@@ -7,6 +7,28 @@ The Archives can be safely uploaded to the public internet. 7zip passwords are s
 
 The index-file mostly consists of tree listings of, all of the names of the files, that are backed-up and in which archive file to find it in.
 
+Easy to set-up just these lines in .bat
+
+:: Just edit the lines below to say which folders to backup
+
+set ALPHA=%USERPROFILE%\Documents\keep
+
+set BETA=C:\Users\Public\Music\*.*
+
+set PDFETA=C:\Users\Public\Documents\*.*
+
+
+
+:: count for the number of file sources
+
+set PLCNO=3
+
+
+
+:: Thats the setup Finished!
+
+
+
 .Make a strong password <https://www.howtogeek.com/195430/how-to-create-a-strong-password-and-remember-it/>
 
 .The safty of 7zip <https://7ziphelp.com/is-7-zip-safe-find-out-the-truth>

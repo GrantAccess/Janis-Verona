@@ -22,7 +22,7 @@ if not exist backed_files.7z.001 goto noindex
 
 :: The master password which you must remember and protect
 :: is held by 'conan the librarian'
-set conan=-pGrantMeAccess
+set conan=-p123ABC
 :: set conan=password
 
 :: if you share your computer with others, then others might read this file

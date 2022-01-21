@@ -4,6 +4,9 @@ echo off
 :: ProgramFiles=C:\Program Files
 :: %ProgramFiles% variable can be used instead
 
+:: set the title of the run window
+title Janis-Verona Backup with 7-Zip
+
 :: put new paths at the start of path, there may be no ; at the end!
 :: add working dir to path
 set PATH=%ProgramFiles%\7-Zip\;%PATH%

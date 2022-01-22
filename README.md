@@ -27,3 +27,7 @@ Easy to set-up just edit these lines in doakopy.bat
 .How good is AES encryption <https://www.techradar.com/uk/news/what-is-aes>
 
 .Other good ways to backup Win10 <https://www.youtube.com/watch?v=y76NTZ6lvnA>
+
+Your files can be restored with any of the operating systems that 7zip supports. 
+7-Zip for Windows. 7-Zip for Linux: console version. 7-Zip for MacOS: console version. LZMA SDK: (C, C++, C#, Java).
+You just need to know the passwords from the index-file.

@@ -1,3 +1,8 @@
+@echo off
+:: Routine burn_iso.bat
+:: For downloading and burning a Linux hotswap DVD image to easily try linux.
+:: by <https://github.com/GrantAccess/Janis-Verona/> (CC)
+:: the author has not changed this document since Monday 31 Jan 2022
 
 :: change to the download dir
 

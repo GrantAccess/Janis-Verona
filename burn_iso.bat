@@ -6,7 +6,9 @@
 
 :: change to the download dir
 
-:: If memory is less than 1Gb use lubuntu 32bit
+:: If memory is less than 1Gb use Zorin Lite
+:: https://mirror.cyberhost.uk/sites/zorinos/16/Zorin-OS-16-Lite-64-bit.iso
+
 :: otherwise use linuxmint
 
 :: from an idea at <https://www.youtube.com/watch?v=Di2nLa8mYaQ&t=16s>
